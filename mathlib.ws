@@ -1,15 +1,5 @@
 # Math utility library
 
-def square(x)
-  result = x * x
-  print(result)
-end
-
-def cube(x)
-  result = x * x * x
-  print(result)
-end
-
 def add(a, b)
   result = a + b
   print(result)
@@ -20,24 +10,33 @@ def multiply(a, b)
   print(result)
 end
 
-def factorial(n)
-  result = 1
-  for i in range(1, n + 1)
-    result = result * i
+def power(in, in2)
+  out = in
+  i = 1
+  while i < in2
+    out = out * in
+    i = i + 1
+    end
+  return out
   end
-  print(result)
-end
 
-def power(base, exp)
-  result = 1
-  for i in range(0, exp)
-    result = result * base
-  end
-  print(result)
-end
-
-# Constants
-pi = 3.14159
+pi = 3.141592653589793238462643383279502884197169399375105820974944592307816406286
 e = 2.71828
 
-print("Math library loaded")
+def factorial(num)
+  i = 1
+  out = 1
+  while i < num
+    out = out * (i + 1)
+    i = i + 1
+    end
+  return out
+  end
+
+def square(in)
+  return power(in, 2)
+  end
+
+def cube(in)
+  return power(in, 3)
+  end
