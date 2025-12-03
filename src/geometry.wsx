@@ -1,0 +1,27 @@
+class Circle
+    init(radius)
+        this.radius = radius
+    end
+    def area()
+        return 3.14159 * (this.radius * this.radius)
+    end
+
+    def circumference():
+        return 2 * 3.14159 * this.radius
+    end
+end
+
+class Rectangle
+    def init(width, height)
+        this.width = width
+        this.height = height
+    end
+    def area()
+        result = this.width * this.height
+        print("Area: " + result)
+    end
+    def perimeter()
+        result = 2 * (this.width + this.height)
+        print("Perimeter: " + result)
+    end
+end

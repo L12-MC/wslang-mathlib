@@ -1,3 +1,7 @@
 {
-    "mathlib": "mathlib.wsx"
+    "constants": "constants.wsx",
+    "powers": "powers.wsx",
+    "fibonacci": "fibonacci.wsx",
+    "geometry": "geometry.wsx",
+    "factorial": "factorial.wsx"
 }
